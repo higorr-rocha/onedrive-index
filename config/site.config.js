@@ -9,7 +9,7 @@ module.exports = {
   // and the writing format is 'iconPrefix-iconName', e.g. icon: 'fab-github',
   // If the FontAwesomIcon you choose does not display properly, you may need to import it in `src/pages/_app.tsx`.
   // However, the browser's tab bar icon is STILL determined by /public/favicon.ico
-  icon: 'fas-cube', // or icon: '/icons/128.png', to use a image.
+  icon: '/icons/128.png',
 
   // Prefix for KV Storage.
   // You can put this in Vercel's environment variable 'KV_PREFIX' without any modification here.
@@ -58,5 +58,5 @@ module.exports = {
   // This is a day.js-style datetime format string to format datetimes in the app. Ref to
   // https://day.js.org/docs/en/display/format for detailed specification. The default value is ISO 8601 full datetime
   // without timezone and replacing T with space.
-  datetimeFormat: 'YYYY-MM-DD HH:mm:ss',
+  datetimeFormat: 'DD-MM-YYYY HH:mm:ss',
 }
