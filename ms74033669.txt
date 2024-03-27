@@ -1,5 +1,0 @@
-﻿{
-  "Description": "Domain ownership verification file for Microsoft 365 - place in the website root",
-  "Domain": "drive-index.eu.org",
-  "Id": "2e913648-9078-4ba7-ba7d-0b874f6816fa"
-}
