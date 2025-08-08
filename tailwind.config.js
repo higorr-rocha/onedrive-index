@@ -38,6 +38,6 @@ module.exports = {
     }
   },
   plugins: [
-    require('@tailwindcss/line-clamp'),
+    // @tailwindcss/line-clamp is now included by default in Tailwind CSS v3.3+
   ],
 }

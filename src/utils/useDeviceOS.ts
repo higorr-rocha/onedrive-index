@@ -4,6 +4,10 @@ export default function useDeviceOS(): string {
   const [os, setOS] = useState('')
 
   useEffect(() => {
+    if (typeof window === 'undefined') {
+      return
+    }
+
     const userAgent = window.navigator.userAgent
 
     if (userAgent.indexOf('Windows') > -1) {

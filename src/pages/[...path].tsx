@@ -1,13 +1,15 @@
 import Head from 'next/head'
 import { useRouter } from 'next/router'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
+import dynamic from 'next/dynamic'
 
 import siteConfig from '../../config/site.config'
 import Navbar from '../components/Navbar'
-import FileListing from '../components/FileListing'
 import Footer from '../components/Footer'
 import Breadcrumb from '../components/Breadcrumb'
-import SwitchLayout from '../components/SwitchLayout'
+
+const SwitchLayout = dynamic(() => import('../components/SwitchLayout'), { ssr: false })
+const FileListing = dynamic(() => import('../components/FileListing'), { ssr: false })
 
 export default function Folders() {
   const { query } = useRouter()
